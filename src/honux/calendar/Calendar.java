@@ -31,8 +31,6 @@ public class Calendar {
 	}
 	
 
-	
-	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -42,6 +40,13 @@ public class Calendar {
 		Calendar cal=new Calendar();
 		
 		int input;
+		int input_num;
+		
+		System.out.println("원하는 입력 횟수를 입력하세요:");
+		
+		input_num=scan.nextInt();
+		
+		for(int i=0; i<input_num; i++) {
 		
 		System.out.println("알고 싶은 달을 하나 선택하세요(1월~12월 중): ");
 		
@@ -51,7 +56,8 @@ public class Calendar {
 		
 		System.out.printf("%d월은 %d일까지 있습니다.", input, cal.getMaxDaysOfMonth(input) );
 		
-		scan.close();
 
 	}
+		scan.close();
+}
 }
